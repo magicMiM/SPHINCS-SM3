@@ -13,11 +13,12 @@
  *     20 * 28 = 560
  *
  * The Winternitz parameter remains w = 16; changing it to 256 is a separate
- * size/speed tradeoff and is not part of this experiment.  The full height is
- * the smallest multiple of d that is not below the original h = 68.
+ * size/speed tradeoff and is not part of this experiment.  The reference
+ * implementation stores subtree indices in uint64_t, so
+ * (h / d) * (d - 1) must be at most 64.  With d = 20, choose h = 60.
  */
 #define SPX_N 28
-#define SPX_FULL_HEIGHT 80
+#define SPX_FULL_HEIGHT 60
 #define SPX_D 20
 #define SPX_FORS_HEIGHT 9
 #define SPX_FORS_TREES 35
