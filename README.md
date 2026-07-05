@@ -1,4 +1,4 @@
-# SPJINCS-SM3
+# SPHINCS-SM3
 An attempt for ISC
 
 ## Experimental parameter set: sphincs-sm3-224f
